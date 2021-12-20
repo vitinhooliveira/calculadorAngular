@@ -1,27 +1,22 @@
-# Calc
+# Calculadora com Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+Este é um projeto gerado em Angular, com a intensão de aprimorar meu conhecimentos em Angular.
 
-## Development server
+## Antes de rodar o projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Antes de rodar o projeto, o correto é fazer a instalação do do node.
+Antes de seguir, verifique que voce tem o node instalado, para fazer a verificação é da seguindo forma:
+Abrir o seu terminal e executar no mesmo o seguinte comando:
+`node --version`
 
-## Code scaffolding
+Após a certeza do node na sua maquina, vamos instalar o pacotes do projeto, com o seguinte comando:
+`npm install`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Rodando o projeto
 
-## Build
+Após o passo a passo a cima, podemos rodar o angular na maquina, com o seguinte comando:
+`ng serve`
+Fazendo este comando o mesmo ira abrir na `http://localhost:4200/`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Caso queira abrir em uma porta especifica e fazer o proprio terminal abrir uma janela do seu navegador com a tela, cole esse comando no terminal:
+`ng serve --port 3000 -o` 
