@@ -1,0 +1,31 @@
+<div *ngIf="primeiroValor">
+  <mat-form-field class="camposInput" appearance="fill">
+    <mat-label>Primeiro valor</mat-label>
+    <input matInput type="text" [value]="valorInput" >
+  </mat-form-field>  
+</div>
+<div *ngIf="!primeiroValor">
+    <mat-form-field class="camposInput" appearance="fill">
+        <mat-label>Segundo valor</mat-label>
+        <input matInput type="text" [value]="segundoValor" >
+      </mat-form-field>      
+</div>
+
+<button (click)="adicionar($event)" mat-raised-button color="primary">1</button>
+<button (click)="adicionar($event)" mat-raised-button color="primary">2</button>
+<button (click)="adicionar($event)" mat-raised-button color="primary">3</button>
+<button (click)="adicionar($event)" mat-raised-button color="primary">4</button>
+<button (click)="adicionar($event)" mat-raised-button color="primary">5</button>
+<button (click)="adicionar($event)" mat-raised-button color="primary">6</button>
+<button (click)="adicionar($event)" mat-raised-button color="primary">7</button>
+<button (click)="adicionar($event)" mat-raised-button color="primary">8</button>
+<button (click)="adicionar($event)" mat-raised-button color="primary">9</button>
+<button (click)="adicionar($event)" mat-raised-button color="primary">0</button>
+<button (click)="operacao($event)" mat-raised-button color="primary">+</button>
+<button (click)="operacao($event)" mat-raised-button color="primary">-</button>
+<button (click)="operacao($event)" mat-raised-button color="primary">*</button>
+<button (click)="operacao($event)" mat-raised-button color="primary">/</button>
+<button (click)="operacao2()" mat-raised-button color="primary">=</button>
+<button (click)="operacaoAc()" mat-raised-button color="primary">AC</button>
+
+<div>O resultado é : {{ resultOp }}</div>
